@@ -19,6 +19,9 @@ jobs:
 
       - name: Install Node.js dependencies
         run: npm install
+        
+      - name: npm init
+        run: npm init -y
 
       - name: Install React Native CLI
         run: npm install -g react-native-cli
