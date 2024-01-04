@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     steps:
       - uses: actions/checkout@v3
@@ -17,9 +17,6 @@ jobs:
         with: 
               node-version: '16.14.0'
 
-      - name: npm init
-        run: npm init -y
-
       - name: Install Node.js dependencies
         run: npm install
 
@@ -27,6 +24,6 @@ jobs:
         run: npm install -g react-native-cli
 
       - name: Build project
-        run: npm run build
+        run: npm run android
       
 
