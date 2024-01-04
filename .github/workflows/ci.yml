@@ -17,11 +17,11 @@ jobs:
         with: 
               node-version: '16.14.0'
 
-      - name: Install Node.js dependencies
-        run: npm install
-        
       - name: npm init
         run: npm init -y
+
+      - name: Install Node.js dependencies
+        run: npm install
 
       - name: Install React Native CLI
         run: npm install -g react-native-cli
